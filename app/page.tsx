@@ -8,7 +8,7 @@ import { AppPhoneShowcase } from "./sections/AppPhoneShowCase/AppPhoneShowCase";
 
 export default function Home() {
   return (
-    <main className="bg-black">
+    <main>
       <Hero />
       <Tagline />
       <InvestmentDetails />

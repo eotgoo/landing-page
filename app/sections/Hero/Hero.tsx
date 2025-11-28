@@ -13,7 +13,7 @@ export const Hero = () => {
       <Container className="relative z-10 flex flex-col min-h-[80vh] py-12 md:min-h-[90vh] md:py-20">
         <LogoRow />
 
-        <div className="mt-8 sm:mt-10 md:mt-14 flex flex-col gap-10 md:gap-12 md:flex-row ...">
+        <div className="mt-8 sm:mt-10 md:mt-14 flex flex-col gap-10 md:gap-12 md:flex-row">
           <div className="max-w-xl mx-auto text-center md:text-left space-y-6 md:mx-0">
             <p className="inline-block rounded-full border border-white/20 bg-white/5 px-3 py-1 text-[11px] uppercase tracking-wider text-amber-300/90">
               Omni Asset II
@@ -22,13 +22,12 @@ export const Hero = () => {
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[50px] font-semibold leading-tight tracking-tight">
               Хөрөнгөөр баталгаажсан
               <br />
-              <span className="text-amber-300">
-                үнэт цаас
-              </span>
+              <span className="text-amber-300">үнэт цаас</span>
             </h1>
 
             <p className="mx-auto max-w-md text-[15px] sm:text-base text-slate-300/90 md:mx-0 leading-relaxed">
-              Omni Asset 2 нь бодит хөрөнгөөр баталгаажсан, тогтмол хүүгийн орлого өгдөг найдвартай хөрөнгө оруулалтын боломж.
+              Omni Asset 2 нь бодит хөрөнгөөр баталгаажсан, тогтмол хүүгийн
+              орлого өгдөг найдвартай хөрөнгө оруулалтын боломж.
             </p>
           </div>
 
@@ -38,7 +37,8 @@ export const Hero = () => {
                 <div>
                   <p className="text-xs text-slate-400">Жилийн хүү</p>
                   <p className="text-sm font-semibold text-slate-50 mt-0.5">
-                    19.20% <span className="text-emerald-400 text-[11px]">/ жил</span>
+                    19.20%{" "}
+                    <span className="text-emerald-400 text-[11px]">/ жил</span>
                   </p>
                 </div>
               </div>
@@ -72,8 +72,8 @@ const LineChartAnimated = () => {
         </linearGradient>
 
         <linearGradient id="fillGradient" x1="0" y1="0" x2="0" y2="1">
-          <stop offset="0%" stopColor="rgba(251,191,36,0.35)" />
-          <stop offset="100%" stopColor="rgba(15,23,42,0)" />
+          <stop offset="0%" stopColor="#fbbf24" stopOpacity="0.35" />
+          <stop offset="100%" stopColor="#0f172a" stopOpacity="0" />
         </linearGradient>
       </defs>
 
@@ -82,9 +82,11 @@ const LineChartAnimated = () => {
         fill="url(#fillGradient)"
         initial={{ opacity: 0, translateY: 10 }}
         whileInView={{ opacity: 1, translateY: 0 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.8 }}
       />
 
+      {/* Line */}
       <motion.path
         d="M5 100 L35 80 L70 90 L105 55 L140 65 L175 35 L195 25"
         fill="none"
@@ -93,6 +95,7 @@ const LineChartAnimated = () => {
         strokeLinecap="round"
         initial={{ pathLength: 0, opacity: 0 }}
         whileInView={{ pathLength: 1, opacity: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{
           duration: 1.4,
           ease: "easeInOut",
@@ -108,6 +111,7 @@ const LineChartAnimated = () => {
         fill="#fbbf24"
         initial={{ scale: 0.6, opacity: 0 }}
         whileInView={{ scale: 1, opacity: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.4, delay: 0.4 }}
       />
     </svg>
