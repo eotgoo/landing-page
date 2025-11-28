@@ -61,7 +61,7 @@ Omni Asset II ХБҮЦ-ийн танилцуулга хуудас
 ![Desktop](./public/gif/desktop.gif)
 
 ### Mobile  gif
-<img src="./public/images/landing-mobile.gif" alt="Landing Page Mobile" width="300"/>
+![Mobile](./public/gif/app.gif)
 
 
 ---
