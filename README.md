@@ -1,36 +1,101 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Omni Asset II | Apex Capital Landing Page
 
-## Getting Started
+Omni Asset II ХБҮЦ-ийн танилцуулга хуудас
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+##  Төслийг ажиллуулах
+
+1. **Clone the repository**
+   ```sh
+   git clone https://github.com/eotgoo/landing-page.git
+   ```
+
+2. **Install dependencies**
+   ```sh
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server**
+   ```sh
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open in browser**
+   Visit [http://localhost:3000](http://localhost:3000)
+
+---
+
+## Features
+
+- Mobile-first зарчимтай responsive дизайн
+- Аnimation-тай Hero хэсэг (динамик график)
+- Үг солигддог аnimation-тай tagline
+- Scroll-trigger animation бүхий хөрөнгө оруулалтын мэдээллийн grid
+- 3D утасны аnimation-тай App showcase
+- Түнш байгууллагын лого бүхий logo strip
+- Framer Motion ашигласан хөдөлгөөн, шилжилтүүд
+- MUI дээр суурилсан UI компонентууд
+- Tailwind CSS utility стилийн бүтэц
+
+---
+
+## 🛠️ Technology Stack
+
+- **React** & **Next.js** (App Router, TypeScript)
+- **Tailwind CSS** (utility-first загварчлал)
+- **Material UI (MUI)** (UI компонентыг бүтээх)
+- **Framer Motion** (хөдөлгөөн, анимейшн)
+- **Emotion** (MUI styling engine)
+- **Responsive Design** (бүх төрлийн дэлгэцэнд нийцсэн бүтэц)
+
+---
+
+## 📸 GIFs
+
+### Desktop gif
+![Hero Section](./public/gif/desktop.gif)
+
+### Mobile  gif
+![Investment Details](./public/gif/mobile.gif)
+
+
+---
+
+## 📂 Folder Structure
+
+```
+app/
+  sections/
+    Hero/
+    Tagline/
+    InvestmentDetails/
+    LogoStrip/
+    Footer/
+    AppPhoneShowCase/
+components/
+  ui/
+  common/
+  animations/
+lib/
+public/
+  images/
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+---
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📄 License
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+MIT
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🌐 Live Demo
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+[Vercel дээр ажиллаж буй хувилбар](https://landing-page-two-zeta-72.vercel.app/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
