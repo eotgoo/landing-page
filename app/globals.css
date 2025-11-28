@@ -1,0 +1,16 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg-main: #3b0c05;
+  --color-bg-secondary: #5c1b0a;
+  --color-accent: #38bdf8; 
+}
+
+html, body {
+  @apply bg-black text-white;
+  overscroll-behavior-y: none;
+  margin: 0;
+  padding: 0;
+}
+
+
